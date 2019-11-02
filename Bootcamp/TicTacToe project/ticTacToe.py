@@ -115,7 +115,6 @@ print('Welcome to TIC TAC TOE!')
 # WHILE LOOP TP KEEP THE GAME RUNNING
 while True:
     # PLAY THE GAME
-
     ## SET EVEYTHING UP (BOARD, WHOS FIRST, CHOOSE MARKERS)
     the_board = [' ']*10
     player1_marker,player2_marker = player_input()
@@ -134,7 +133,6 @@ while True:
         if turn == 'Player 1':
         ###PLAYER 1 TURN 
             #show the board
-
             display_board(the_board)
             # choose a position
             print('player1 turn')
@@ -177,9 +175,7 @@ while True:
                     game_on = False
                 else:
                     # no tie no win? then next player's turn
-                    turn = 'Player 1'
-        
-
+                    turn = 'Player 1'     
     if not replay():
         break
     # BREAK OUT OF THE WHILE LOOP ON replay()
